@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #49aea9; }
+
+#app {
+  width: 490px;
+  height: 365px;
+  position: absolute;
+  top: 50%;
+  margin-top: -245px;
+  left: 50%;
+  margin-left: -182px;
+  background: #fcfcfc;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.45); }
+
+header {
+  height: 43px;
+  border-bottom: 1px solid #b7b7b7;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #dedede), color-stop(100%, #efefef));
+  background: -webkit-linear-gradient(bottom, #dedede 0%, #efefef 100%);
+  background: -moz-linear-gradient(bottom, #dedede 0%, #efefef 100%);
+  background: -o-linear-gradient(bottom, #dedede 0%, #efefef 100%);
+  background: -ms-linear-gradient(bottom, #dedede 0%, #efefef 100%);
+  background: linear-gradient(bottom, #dedede 0%, #efefef 100%); }
+  header .buttons {
+    background: url(../images/mac.png) no-repeat;
+    background-position: 13px 17px;
+    height: 29px;
+    width: 65px; }
+
+#settings {
+  height: 38px;
+  border-bottom: 1px solid #d1d1d1;
+  box-shadow: 0 1px 0 #fff;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #fafafa));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+  background: -moz-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+  background: linear-gradient(top, #ffffff 0%, #fafafa 100%);
+  position: relative; }
+  #settings .buttons {
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #fafafa));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+    background: -moz-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+    background: linear-gradient(top, #ffffff 0%, #fafafa 100%);
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    width: 81px;
+    height: 26px;
+    box-shadow: 0 1px 0 #fff;
+    position: absolute; }
+    #settings .buttons#style {
+      top: 6px;
+      left: 11px; }
+    #settings .buttons#align {
+      top: 6px;
+      left: 346px; }
+    #settings .buttons div {
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      cursor: pointer; }
+      #settings .buttons div:not(:first-child) {
+        margin-left: -4px; }
+      #settings .buttons div:nth-child(2) {
+        border-width: 1px;
+        margin-top: -1px;
+        height: 24px;
+        -moz-border-image: -webkit-linear-gradient(top, white, #d9d9d9) 1 100%;
+        -webkit-border-image: -webkit-linear-gradient(top, white, #d9d9d9) 1 100%;
+        -webkit-border-image: -webkit-linear-gradient(top, white, #d9d9d9) 1 100%;
+        -o-border-image: -webkit-linear-gradient(top, white, #d9d9d9) 1 100%;
+        border-image: -webkit-linear-gradient(top, white, #d9d9d9) 1 100%; }
+      #settings .buttons div.bold {
+        background: url(../images/bold.png) no-repeat 8px 6px; }
+      #settings .buttons div.italic {
+        background: url(../images/italic.png) no-repeat 9px 6px; }
+      #settings .buttons div.left {
+        background: url(../images/left.png) no-repeat 8px 6px; }
+      #settings .buttons div.center {
+        background: url(../images/center.png) no-repeat 8px 6px; }
+      #settings .buttons div.right {
+        background: url(../images/right.png) no-repeat 8px 6px; }
+  #settings .sbHolder, #settings input {
+    -webkit-appearance: none;
+    height: 26px;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #fff;
+    position: absolute;
+    top: 6px; }
+    #settings .sbHolder:focus, #settings input:focus {
+      outline: none; }
+  #settings .sbHolder {
+    background: #fff;
+    left: 163px;
+    width: 127px;
+    box-shadow: inset 0 1px 2px #f6f6f6; }
+    #settings .sbHolder .sbSelector, #settings .sbHolder .sbOptions a {
+      display: block;
+      height: 26px;
+      font: 13px Candara;
+      color: #979797;
+      text-decoration: none;
+      line-height: 26px;
+      padding-left: 15px;
+      width: 114px; }
+    #settings .sbHolder .sbOptions {
+      background: #fff;
+      border: 1px solid #d6d6d6;
+      border-radius: 3px; }
+      #settings .sbHolder .sbOptions li {
+        list-style: none; }
+        #settings .sbHolder .sbOptions li a {
+          display: block; }
+  #settings .size {
+    width: 50px;
+    left: 100px; }
+  #settings .color {
+    width: 50px;
+    left: 300px; }
+
+#page {
+  height: 280px;
+  font: 16px Candara;
+  color: #6e6e6e; }
+  #page:focus {
+    outline: none; }
