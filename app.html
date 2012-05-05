@@ -23,20 +23,17 @@
 		<div id="settings">
 			<!-- Font style -->
 			<div id="style" class="buttons">
-				<div class="bold"></div>
-				<div class="italic"></div>
-				<div class="underline"></div>
+				<div class="bold" title="Bold"></div>
+				<div class="italic" title="Italic"></div>
+				<div class="underline" title="Underline"></div>
 			</div>
-
-			<!-- Font size -->
-			<input type="number" class="size">
 
 			<!-- Font family -->
 			<select name="style-set" class="style-set">
 				<option value="h1">Heading 1</option>
 				<option value="h2">Heading 2</option>
 				<option value="h3">Heading 3</option>
-				<option value="p">Paragraph</option>
+				<option value="h6">Paragraph</option>
 				<option value="blockquote">Blockquote</option>
 			</select>
 
@@ -45,13 +42,20 @@
 
 			<!-- Alignment -->
 			<div id="align" class="buttons">
-				<div class="left"></div>
-				<div class="center"></div>
-				<div class="right"></div>
+				<div class="left" title="Left align"></div>
+				<div class="center" title="Center align"></div>
+				<div class="right" title="Right align"></div>
+			</div>
+
+			<!-- Other -->
+			<div id="other" class="buttons">
+				<div class="list" title="Insert list"></div>
+				<div class="link" title="Add hyperlink (Hold alt to unlink)"></div>
+				<div class="image" title="Insert image"></div>
 			</div>
 		</div>
 		<div id="page" contenteditable="true">
-			
+
 		</div>
 	</section>
 </body>

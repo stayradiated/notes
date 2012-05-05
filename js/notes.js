@@ -2,9 +2,10 @@ $(document).ready(function () {
 
 	// Load from localStorage
 	$('#page').html(localStorage.getItem('notes'));
+	formatText('enableObjectResizing')
 
 	// Save to localStorage
-	$('#page').keydown(function () {
+	$('#page').keyup(function () {
 		save();
 	});
 
@@ -23,6 +24,27 @@ $(document).ready(function () {
 
 	// Style Set
 	$('#settings .style-set').change(function () {formatText('formatBlock', this.value)});
+
+	// Other
+	$('#other .list').mousedown(function () {formatText('insertUnorderedList');return false;});
+	$('#other .link').mousedown(function (e) {
+		if (e.altKey) {
+			formatText('unlink', url);
+		} else {
+			var url = prompt("Enter URL");
+			if(url) {
+				formatText('createLink', url);
+			}
+		}
+		
+		return false;
+	});
+	$('#other .image').mousedown(function () {
+		var url = prompt("Enter URL");
+		if(url) {
+			formatText('insertImage', url);
+		}
+	});
 });
 
 function formatText(command, option) {
